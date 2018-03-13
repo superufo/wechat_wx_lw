@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container" style='align-items: center;'>
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+
+    <button type="default" size="{{defaultSize}}" loading="{{loading}}" plain=false   hover-class='other-button-hover' 
+        disabled="{{disabled}}" bindtap="rederectTap" hover-class="other-button-hover"> 授权 </button>
+
+
+  </view>
+
+</view>

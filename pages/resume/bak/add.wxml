@@ -1,0 +1,155 @@
+<view class="container">
+    <form catchsubmit="formSubmit" catchreset="formReset">
+     <view class='div'>
+      <view class="form-com">
+         <view class="cell">
+            <text>出生年月</text><input name="detail" placeholder="请输入详情地址" value="{{address.detail}}" />
+          </view>
+          <view class="cell">
+            <text>姓名</text>
+            <input name="realname" placeholder="请输入收件人姓名" value="{{address.realname}}" />
+          </view>
+          <view class="cell">
+            <text>手机</text>
+            <input name="mobile" placeholder="请输入手机号码" value="{{address.mobile}}" type="number"/>
+          </view>
+	
+          <view class="cell">
+            <text>地址</text> <textarea  maxlength='-1'  style=""   />
+          </view>
+          <view class="cell">
+            <text>姓名</text><textarea maxlength='-1'   />
+          </view>
+          <view class="cell">
+            <text>手机</text>
+            <input name="mobile" placeholder="请输入手机号码" value="{{address.mobile}}" type="number"/>
+          </view>
+
+          <view class="cell">
+            <text>地址</text><input name="detail" placeholder="请输入详情地址" value="{{address.detail}}" />
+          </view>
+          <view class="cell">
+            <text>姓名</text>
+            <input name="realname" placeholder="请输入收件人姓名" value="{{address.realname}}" />
+          </view>
+          <view class="cell">
+            <text>手机</text>
+            <input name="mobile" placeholder="请输入手机号码" value="{{address.mobile}}" type="number"/>
+          </view>
+
+
+          <view class="cell">
+            <text>地址</text><input name="detail" placeholder="请输入详情地址" value="{{address.detail}}" />
+          </view>
+          <view class="cell">
+            <text>姓名</text>
+            <input name="realname" placeholder="请输入收件人姓名" value="{{address.realname}}" />
+          </view>
+          <view class="cell">
+            <text>手机</text>
+            <input name="mobile" placeholder="请输入手机号码" value="{{address.mobile}}" type="number"/>
+          </view>
+
+          <view class="cell">
+            <text>地址</text><input name="detail" placeholder="请输入详情地址" value="{{address.detail}}" />
+          </view>
+          <view class="cell">
+            <text>姓名</text>
+            <input name="realname" placeholder="请输入收件人姓名" value="{{address.realname}}" />
+          </view>
+          <view class="cell">
+            <text>手机</text>
+            <input name="mobile" placeholder="请输入手机号码" value="{{address.mobile}}" type="number"/>
+          </view>
+
+          <view class="cell">
+            <text>地址</text><input name="detail" placeholder="请输入详情地址" value="{{address.detail}}" />
+          </view>
+          <view class="cell">
+            <text>姓名</text>
+            <input name="realname" placeholder="请输入收件人姓名" value="{{address.realname}}" />
+          </view>
+          <view class="cell">
+            <text>手机</text>
+            <input name="mobile" placeholder="请输入手机号码" value="{{address.mobile}}" type="number"/>
+          </view>
+
+          <view class="cell">
+            <text>地址</text><input name="detail" placeholder="请输入详情地址" value="{{address.detail}}" />
+          </view>
+          <view class="cell">
+            <text>姓名</text>
+            <input name="realname" placeholder="请输入收件人姓名" value="{{address.realname}}" />
+          </view>
+          <view class="cell">
+            <text>手机</text>
+            <input name="mobile" placeholder="请输入手机号码" value="{{address.mobile}}" type="number"/>
+          </view>
+
+          <view class="cell">
+            <text>地址</text><input name="detail" placeholder="请输入详情地址" value="{{address.detail}}" />
+          </view>
+          <view class="cell">
+            <text>姓名</text>
+            <input name="realname" placeholder="请输入收件人姓名" value="{{address.realname}}" />
+          </view>
+          <view class="cell">
+            <text>手机</text>
+            <input name="mobile" placeholder="请输入手机号码" value="{{address.mobile}}" type="number"/>
+          </view>
+
+          <view class="cell">
+            <text>地址</text><input name="detail" placeholder="请输入详情地址" value="{{address.detail}}" />
+          </view>
+          <view class="cell">
+            <text>姓名</text>
+            <input name="realname" placeholder="请输入收件人姓名" value="{{address.realname}}" />
+          </view>
+          <view class="cell">
+            <text>手机</text>
+            <input name="mobile" placeholder="请输入手机号码" value="{{address.mobile}}" type="number"/>
+          </view>
+
+          <view class="cell">
+            <text>地址</text><input name="detail" placeholder="请输入详情地址" value="{{address.detail}}" />
+          </view>
+          <view class="cell">
+            <text>姓名</text>
+            <input name="realname" placeholder="请输入收件人姓名" value="{{address.realname}}" />
+          </view>
+          <view class="cell">
+            <text>手机</text>
+            <input name="mobile" placeholder="请输入手机号码" value="{{address.mobile}}" type="number"/>
+          </view>
+
+          <view class="cell">
+            <text>地址</text><input name="detail" placeholder="请输入详情地址" value="{{address.detail}}" />
+          </view>
+          <view class="cell">
+            <text>姓名</text>
+            <input name="realname" placeholder="请输入收件人姓名" value="{{address.realname}}" />
+          </view>
+          <view class="cell">
+            <text>手机</text>
+            <input name="mobile" placeholder="请输入手机号码" value="{{address.mobile}}" type="number"/>
+          </view>
+
+          <view class="cell">
+            <text>地址</text><input name="detail" placeholder="请输入详情地址" value="{{address.detail}}" />
+          </view>
+          <view class="cell">
+            <text>姓名</text>
+            <input name="realname" placeholder="请输入收件人姓名" value="{{address.realname}}" />
+          </view>
+          <view class="cell">
+            <text>手机</text>
+            <input name="mobile" placeholder="请输入手机号码" value="{{address.mobile}}" type="number"/>
+          </view>
+      </view>
+
+      <view class="form-submit">
+        <button type="primary"   >保存</button>
+      </view>
+    </view>
+  </form>
+</view>

@@ -1,0 +1,30 @@
+<view class="userinfo">
+	<image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover" bindtap="chooseImage"></image>
+	<text class="userinfo-nickname">{{userInfo.nickName}}</text>
+</view>
+<view class="order-area">
+	<view bindtap="navigateToOrder" class="order" data-status="0">
+		<image src="../../../images/icon_order.png" />
+		<text>收藏公司</text>
+	</view>
+	<view bindtap="navigateToOrder" class="order" data-status="1">
+		<image src="../../../images/icon_order.png" />
+		<text>收藏职位</text>
+	</view>
+	<view bindtap="navigateToOrder" class="order" data-status="2">
+		<image src="../../../images/icon_order.png" />
+		<text>已投递职位</text>
+	</view>
+</view>
+<view bindtap="navigateToAddress" class="tableviewcell">
+	<image src="../../../images/icon_address.png" />
+	<text>我的简历</text>
+</view>
+<view bindtap="navigateToShare" class="tableviewcell">
+	<image src="../../../images/icon_share.png" />
+	<text>扫码分享</text>
+</view>
+<view bindtap="navigateToAboutus" class="tableviewcell">
+	<image src="../../../images/icon_aboutus.png" />
+	<text>关于我们</text>
+</view>

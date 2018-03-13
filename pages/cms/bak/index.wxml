@@ -1,0 +1,17 @@
+<!--pages/resume/index.wxml-->
+<view class="container">
+  <block wx:for="{{topiclist}}">
+           <navigator url="../cms/show?id={{item.id}}" >
+                <view class="topic_item" bindtap='' >
+                    <view class="topic_view_img"  >
+                    <image  class='topic_img' src="{{item.img}}" style="width: 100px; height: 100px; background-color: #eeeeee;display: inline-block;" mode="scaleToFill" ></image>
+                    </view>
+                    <view class="topic_view_text"  >
+                      <view class='title_text' >{{item.title}} <view class='time_text'  >--{{item.op_time}}</view></view>    
+                      <!--<template is="wxParse" data="{{wxParseData:content.nodes}}"/>-->
+                      <text class='content_text'> {{item.list_content}} </text>
+                    </view>
+                </view>
+            </navigator>
+  </block>
+</view>

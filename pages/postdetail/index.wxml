@@ -1,0 +1,79 @@
+<!--index.wxml-->
+<import src="../wxParse/wxParse.wxml"/>
+
+<view class="container">
+
+  <view class='content'>
+
+    <view class="post_s">
+      <view>
+          <image src='../../images/post.png'  style="margin-left: 3% ;margin-top: 1% ;width: 15px; height: 15px;display: inline-block;" ></image>
+          <text class='post_name' >{{position.data.name}}</text>
+          <text class='post_money' >[￥{{position.data.min_money}}元-￥{{position.data.max_money}}元]</text>
+          <image src="../../images/xin.png" style="width: 20px; height: 20px; display:inline-block; " mode="scaleToFill" ></image>
+      </view>
+      
+      <view class="post_item">
+          <image class='post_s1_img'  src='../../images/th_Blueitem.png'></image>
+          <text class='post_s1' >{{position.data.need_num}}人</text>
+
+          <image class='post_s1_img'  src='../../images/th_Blueitem.png'></image>
+          <text class='post_s1' >{{position.data.education}}</text>
+
+          <image class='post_s1_img'  src='../../images/th_Blueitem.png'></image>
+          <text class='post_s1' >{{position.data.work_year}}年</text>
+
+          <image class='post_s1_img'  src='../../images/th_Blueitem.png'></image>
+          <text class='post_s1' >{{position.data.city}}</text>
+
+          <image class='post_s1_img'  src='../../images/th_Blueitem.png'></image>
+          <text class='post_s1' >{{position.data.fulljob}}</text>
+      </view>
+    </view>
+
+    <view class="post_s">
+      <navigator url="../companydetail/index?code={{position.data.customer_code}}" >
+              <view class="company_item"  >
+                  <view class="company_view_img"  >
+                   <image  class='company_img' src="{{position.data.logo}}" style="width: 100px; height: 80px; background-color: #eeeeee;display: inline-block;"  mode="scaleToFill" ></image>
+                  </view>
+                  <view class='company_texts'>
+                      <text class='customer_name' > {{position.data.customer_name}}</text>
+
+                      <text class='company_comm'> {{position.data.province}}-{{position.data.city}}-{{position.data.town}}</text>   
+                      
+                      <text class='company_comm' >{{position.data.customer_type}} | {{position.data.customer_scale}}人</text>        
+                   </view>
+              </view>
+      </navigator>
+    </view>
+
+    <view class="view_scoll">
+         <view>
+          <image src='../../images/description.png' style="margin-left: 3% ;margin-top: 1% ;width: 15px; height: 15px;display: inline-block;"></image>
+          <text class='post_name' >职位描述</text>
+        </view>
+        <view>
+           <text class='post_rich_text' >要求：</text>
+           <template is="wxParse" data="{{wxParseData:request.nodes}}"/>
+        </view>
+
+        <view>
+           <text class='post_rich_text' >职责：</text>
+           <template is="wxParse" data="{{wxParseData:duty.nodes}}"/>
+        </view>
+    </view>
+
+    <loading hidden="{{loadingHidden}}">
+        加载中...
+    </loading>
+
+  </view>
+
+  <view class='form-sb'>
+    <view class="footer">
+      <!--open-type="getPhoneNumber"-->
+      <button     bindtap="sendResume" type="default" class="send-resume">发送简历</button>
+    </view>
+  </view>
+</view>

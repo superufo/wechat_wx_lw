@@ -1,0 +1,140 @@
+.container {
+    background-color: #Ffffff;
+    flex-direction: column;
+    flex: column;
+    line-height: 1.6;
+    font-family: -apple-system-font, "Helvetica Neue", sans-serif;
+}
+
+.swiper_box {
+    width: 100%;
+    display: block;
+    height: 150px;
+    background-color: #F2f222;
+    border-color: #F22233;
+}
+
+swiper-item image {
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+view.text {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px 10px 10px 12px;
+    font-size: 15px;
+    color: #656565;
+}
+
+/***view.postlist {
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 10px 10px 10px 12px;
+    font-size: 8px;
+    color: #656565;
+}****/
+
+view.text:before {
+    position: absolute;
+    display: block;
+    content: ' ';
+    left: -5px;
+    width: 2px;
+    height: 100%;
+    background-color: #09bb07;
+}
+
+.line_flag {
+    width: 3px;
+    display: inline-block;
+    background-color: #f9f027;
+}
+
+view.text text {
+    margin-left: 10px;
+    line-height: 18px;
+    font-weight: bold;
+}
+
+.venues_box {
+    padding: 0 10rpx;
+}
+
+/**inline-block**/
+.venues_item {
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    font-size: 11px;
+}
+
+.venues_item image{
+    width: 100%;
+    height: 105px;
+    margin: 0 0.5%;
+    display: inline-block;
+}
+
+.venues_view_img{
+  display: inline-block;
+   margin: 0 0.5%;
+}
+
+.venues_img{
+  width: 100%;
+  height: 90px;
+}
+
+.venues_texts{
+    display: flex;
+    align-items: center;
+    flex-direction:column;
+    direction:column;
+    width: 100%;
+    margin-left: 5%;
+    margin-bottom: 1%;
+}
+
+.venues_customer{
+    width: 100%;
+    font-size: 12px;
+    font-weight: bold;
+    flex-wrap:warp;
+    margin-top: 2%;
+}
+
+.venues_name{
+    width: 100%;
+    display: inline-block;
+    flex-wrap:warp;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.venues_comm{
+    width: 100%;
+    flex-wrap:warp;
+    margin-top: 1%;
+}
+
+.choice_box {
+    padding: 0 10rpx;
+}
+.choice_box .choice_list .choice_item{
+    margin-bottom: 15px;
+}
+.choice_box .choice_list image {
+    width: 100%;
+    height: 200px;
+}
+
+.choice_box .choice_list .title {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+}

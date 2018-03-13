@@ -1,0 +1,29 @@
+/* pages/resume/index.wxss */
+
+.container {
+    background-color: #F2f2f2;
+    flex-direction: column;
+    flex: column;
+}
+
+.topic_item {
+  font-size: 12px;
+  display:flex;
+  flex-direction:row;
+ 
+}
+
+.topic_view_text{
+   display:flex;
+  flex-direction:column;
+   margin-left:10px;
+}
+
+.title_text {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.time_text{
+  font-size: 10px;
+}

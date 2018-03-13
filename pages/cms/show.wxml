@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<import src="../wxParse/wxParse.wxml"/>
+
+<view class="container">
+              <text class='title_text' >{{topicinfo.title}}\n</text> 
+              <text class='time_text'  > {{topicinfo.op_time}}</text>
+              
+                <image  class='topic_img' src="{{topicinfo.img}}" style=" margin-top:2px;background-color: #eeeeee;display: inline-block;" mode="scaleToFill" ></image>
+
+                <view class='rich'>
+                  <template is="wxParse" data="{{wxParseData:content.nodes}}"/>
+                </view>
+
+
+
+              <form catchsubmit="formSubmit" catchreset="formReset" >
+                  <view class='comment'>
+                    <view class='comment_label'>
+                        评论:
+                    </view>
+                    <view >
+                        <textarea bindblur="bindTextAreaBlur" maxlength='-1' style="background-color:#ffffff" id='comment' name='comment' />
+                    </view>
+                  
+                    <button type="default" class="{{next}}"  disabled="{{disabled}}" formType="submit">提交</button>
+                  </view>
+            </form>
+</view>

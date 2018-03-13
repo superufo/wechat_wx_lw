@@ -1,0 +1,120 @@
+<form catchsubmit="formSubmit" catchreset="formReset" >
+
+<view class="max">
+	个人信息
+</view>
+
+<view class="howmuch">
+	姓名:
+	<input type="digit" class="ipt"  maxlength="40" bindinput="next"  focus="{{focus}}" id='fullname' name='fullname' />
+</view>
+
+<view class="howmuch">
+	职业:
+	<input type="digit" class="ipt"  maxlength="40" bindinput="next"  focus="{{focus}}" id='profession' name='profession' />
+</view>
+
+
+<view class="howmuch">
+	<view>出生日期:</view>
+  <picker mode="date" value="1980-01-01" start="1920-07-30" end="2017-07-30" bindchange="bindBirthdayChange" id='birthday' name='birthday'  >
+    <text class="ipt">{{birthdayData}}</text>
+  </picker>
+</view>
+
+<view class="howmuch">
+   <view>所在省:</view>
+  <picker bindchange="bindProvinceChange" value="{{provinceval[provinceindex]}}" range="{{provinceval}}" id='livingprovince' name='livingprovince' >
+      <text  class="ipt">{{provinceval[provinceindex]}}</text> 
+  </picker>
+</view>
+
+<view class="howmuch">
+   <view>所在城市:</view>
+  <picker bindchange="livingcityChange" value="{{livingcityval[livingcityindex]}}" range="{{livingcityval}}" id='livingcity' name='livingcity' >
+      <text  class="ipt">{{livingcityval[livingcityindex]}}</text> 
+  </picker>
+</view>
+
+<view class="howmuch">
+	电话号码:
+	<input type="digit" class="ipt"  maxlength="11" bindinput="next"  focus="{{focus}}" id='phoneNumber' name='phoneNumber' />
+</view>
+
+<view class="howmuch">
+	<view>状态:</view>
+  <view>
+    <picker bindchange="bindisFreeChange" value="{{isFreeval[isFreeindex]}}" range="{{isFreeval}}" id='isFree' name='isFree' >
+      <text  class="ipt">{{isFreeval[isFreeindex]}}</text> 
+    </picker>
+  </view>  
+</view>
+
+<view class="howmuch">
+	<view>学历:</view>
+	<picker bindchange="bindEducationChange" value="{{educationval[educationindex]}}" range="{{educationval}}" id='education' name='education'   >
+    <text class="ipt">{{educationval[educationindex]}}</text>
+  </picker>
+</view>
+
+<view class="howmuch">
+	<view>毕业时间:</view>
+  <picker mode="date" value="2001-07-30" start="1920-07-30" end="3017-07-30" bindchange="bindEducationYearChange" id='educationYear' name='educationYear' >
+    <text class="ipt">{{educationYearData}}</text>
+  </picker>
+</view>
+
+<view class="max">
+	期望工作
+</view>
+<view class="howmuch">
+	期望职位:
+	<input type="digit" class="ipt"  maxlength="30" bindinput="next"  focus="{{focus}}" id='job' name='job' />
+</view>
+<view class="howmuch">
+	期望月薪:
+	<input type="digit" class="ipt"  maxlength="30" bindinput="next"  focus="{{focus}}" id='sarary' name='sarary' />
+</view>
+<view class="howmuch">
+	期望城市:
+	<input type="digit" class="ipt"  maxlength="30" bindinput="next"  focus="{{focus}}" id='city' name='city' />
+</view>
+<view class="howmuch">
+	职位性质:
+	<picker bindchange="bindFulljobChange" value="{{fulljobval[fulljobindex]}}" range="{{fulljobval}}" id='fulljob' name='fulljob'   >
+    <text class="ipt" >{{fulljobval[fulljobindex]}}</text>
+  </picker>
+</view>
+
+<view class="max">
+	工作技能
+</view>
+<view class="howmuch1">
+	<textarea bindblur="bindTextAreaBlur" maxlength='-1' id='skill' name='skill' />
+</view>
+
+<view class="max">
+	教育经验
+</view>
+<view class="howmuch1">
+	<textarea bindblur="bindTextAreaBlur" maxlength='-1'   id='education_experince' name='education_experince' />
+</view>
+
+<view class="max">
+	工作经历
+</view>
+<view class="howmuch1">
+	<textarea bindblur="bindTextAreaBlur" maxlength='-1' id='work_experince' name='work_experince' />
+</view>
+
+<view class="max">
+	项目经历
+</view>
+<view class="howmuch1">
+	<textarea bindblur="bindTextAreaBlur" maxlength='-1' id='project_experince' name='project_experince'  />
+</view>
+
+<view>
+   <button type="default" class="{{next}}" disabled="{{disabled}}" formType="submit">保存</button>
+</view>
+</form>
